@@ -1,4 +1,4 @@
-# Native to EVM transaction example
+# How-to: Native to EVM transaction (with example)
 
 This repository documents how to call an EVM Solidity Contract from Native EOSIO 
 
