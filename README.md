@@ -7,7 +7,7 @@ This repository documents how to call an EVM Solidity Contract from Native EOSIO
 
 The example script in this repository requires NodeJS 14+
 
-EOSIO's `cleos` & `keosk` are required to create a native transaction
+EOSIO's `cleos` & `keosk` are required to call eosio.evm `raw` method
 
 ## Rundown
 
