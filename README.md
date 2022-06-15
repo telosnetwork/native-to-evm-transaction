@@ -22,10 +22,11 @@ Besides the data itself, preparing the EVM Transaction requires several variable
 - Gas Limit
 - Gas Price
 
-We can get those variables using [telosevm-js](https://github.com/telosnetwork/telosevm-js):
+We can get those variables using [telosevm-js](https://github.com/telosnetwork/telosevm-js) and the data using etherJS:
 
 ```
 import  { TelosEvmApi } from "@telosnetwork/telosevm-js";
+import  {BigNumber, ethers}  from  'ethers';
 const evmApi = new TelosEvmApi({`
     endpoint: "https://testnet.telos.net",
     chainId: '41',
@@ -51,6 +52,24 @@ const nonce = parseInt(await evmApi.telos.getNonce(linkedAddress), 16);
 ```
 const gasPrice = BigNumber.from(`0x${await evmApi.telos.getGasPrice()}`)
 ```
+
+All that is left then is to populate a new Transaction
+
+```
+const provider = ethers.getDefaultProvider();
+const contract = new ethers.Contract(contractAddress, contractAbi, provider);
+var unsignedTrx =  await contract.populateTransaction.helloWorld(parameter);
+unsignedTrx.nonce = nonce;
+unsignedTrx.gasLimit = BigNumber.from(`0xA0F4`);
+unsignedTrx.gasPrice = gasPrice;
+```
+
+And serializing it
+
+```
+var raw = await ethers.utils.serializeTransaction(unsignedTrx);
+```
+
 
 ### Send the EVM Transaction from Native
 
