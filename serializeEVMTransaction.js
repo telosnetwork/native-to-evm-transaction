@@ -3,21 +3,33 @@ import  { TelosEvmApi } from "@telosnetwork/telosevm-js";
 import fetch from "node-fetch";
 import  Transaction from '@ethereumjs/tx'
 import  {BigNumber, ethers}  from  'ethers';
+import 'dotenv/config';
 
 // PARTIAL ABI W/ THE HELLO WORLD METHOD WE WANT TO CALL
 const contractAbi = [
     {
-        "inputs": [
-            {
-                "internalType": "string",
-                "name": "name",
-                "type": "string"
-            }
-        ],
-        "name": "helloWorld",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "mint",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
     }
 ]
 
@@ -55,7 +67,7 @@ const evmApi = new TelosEvmApi({
 
     // POPULATE TRANSACTION
     try {
-        var unsignedTrx =  await contract.populateTransaction.helloWorld(parameter);
+        var unsignedTrx =  await contract.populateTransaction.mint(process.env.EVM_USER_ACCOUNT_ADDRESS, 100);
     } catch(e) {
         console.log(e.message);
         return;
