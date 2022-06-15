@@ -20,7 +20,7 @@ const contractAbi = [
     }
 ]
 
-const nativeAccount = "prods.evm";
+const nativeAccount = "mynativeaccount";
 const contractAddress = "0x20027f1e6f597c9e2049ddd5ffb0040aa47f6135";
 
 const provider = ethers.getDefaultProvider();
