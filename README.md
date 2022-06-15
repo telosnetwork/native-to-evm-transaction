@@ -22,7 +22,7 @@ Besides the data itself, preparing the EVM Transaction requires several variable
 - Gas Limit
 - Gas Price
 
-We can get those variables using [telosevm-js](https://github.com/telosnetwork/telosevm-js) and the data using etherJS:
+We can get those variables using [telosevm-js](https://github.com/telosnetwork/telosevm-js) and populate and serialize the EVM transaction data using etherJS:
 
 ```
 import  { TelosEvmApi } from "@telosnetwork/telosevm-js";
