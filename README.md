@@ -48,13 +48,13 @@ const nonce = parseInt(await evmApi.telos.getNonce(linkedAddress), 16);
 const gasPrice = BigNumber.from(`0x${await evmApi.telos.getGasPrice()}`)
 ```
 
-Then we need to use a library like etherJS to populate our new EVM Transaction with the appropriate method we want to call and the variables we just set
+Then we need to use a library like etherJS to populate our new EVM Transaction with the appropriate `myMethod` method we want to call, its parameters and the variables we just set
 
 ```
 const contractAddress = "0x20027f1e6f597c9e2049ddd5ffb0040aa47f6135";
 const provider = ethers.getDefaultProvider();
 const contract = new ethers.Contract(contractAddress, contractAbi, provider);
-var unsignedTrx =  await contract.populateTransaction.helloWorld("HELLO YOU");
+var unsignedTrx =  await contract.populateTransaction.myMethod("HELLO WORLD"); 
 unsignedTrx.nonce = nonce;
 unsignedTrx.gasLimit = BigNumber.from(`0xA0F4`);
 unsignedTrx.gasPrice = gasPrice;
