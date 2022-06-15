@@ -88,7 +88,7 @@ cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{
 ```
 
 
-## Example
+## Use our HelloWorld example
 
 ### Install
 
