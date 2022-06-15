@@ -9,7 +9,7 @@ This repository requires NodeJS 14+
 
 ## Rundown
 
-The `serializeEVMTransaction.js` script is an example on how to populate & serialize EVM transaction data, it is setup to print out calls to TelosEscrow's setLockDuration, setMaxDeposits or transferOwnership methods.
+The `serializeEVMTransaction.js` script is an example on how to populate & serialize EVM transaction data, it is setup to print out serialized calls to TelosEscrow's setLockDuration, setMaxDeposits or transferOwnership methods.
 
 You can use it like so:
 
