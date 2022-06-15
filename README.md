@@ -25,7 +25,7 @@ Open the .env file and change the following values:
 
 ```NATIVE_ACCOUNT=USER_NATIVE_ACCOUNT```
 
-This is your Telos native account name (ie: thisisnottim)
+_This is your Telos native account name (ie: thisisnottim)_
 
 ```EVM_CONTRACT_ADDRESS=TOKEN_CONTRACT_ADDRESS```
 
@@ -42,7 +42,9 @@ _This is the address you will receive the tokens on. If you deployed your own Mi
 Which will give you back the raw transaction data and the EVM Address link to your native account, something like:
 
 ```SERIALIZED_TX: f8450685746050fb5682a0f49420027f1e6f597c9e2049ddd5ffb0040aa47f613580a44eb665af0000000000000000000000000000000000000000000000000000000000000e10```
+
 ```LINKED_ADDRESS: 0xe7209d65c5BB05cdf799b20fF0EC09E691FC3f12```
+
 ```CLEOS COMMAND: cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{ .... ```
 
 ### 4. Use `cleos` to call the eosio.evm contract's `raw` action
