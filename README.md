@@ -141,6 +141,6 @@ cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{
 }' -p yournativeaccount
 ```
 
-Another example would be implementing the EOSJS library in order to send the transaction directly from the script.
+Another example would be implementing the [EOSJS library](https://developers.eos.io/manuals/eosjs/latest/index) in order to send the transaction directly from the script.
 
 
