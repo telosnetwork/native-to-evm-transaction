@@ -22,6 +22,7 @@ const contractAbi = [
 
 const nativeAccount = "mynativeaccount";
 const contractAddress = "0x20027f1e6f597c9e2049ddd5ffb0040aa47f6135";
+const parameter = "MY GREAT NAME";
 
 const provider = ethers.getDefaultProvider();
 const contract = new ethers.Contract(contractAddress, contractAbi, provider);
@@ -42,7 +43,7 @@ const evmApi = new TelosEvmApi({
     const gasPrice = BigNumber.from(`0x${await evmApi.telos.getGasPrice()}`)
 
     // POPULATE TRANSACTION
-    var unsignedTrx =  await contract.populateTransaction.helloWorld("MY GREAT NAME");
+    var unsignedTrx =  await contract.populateTransaction.helloWorld(parameter);
     unsignedTrx.nonce = nonce;
     unsignedTrx.gasLimit = BigNumber.from(`0xA0F4`);
     unsignedTrx.gasPrice = gasPrice;
