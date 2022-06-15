@@ -1,5 +1,5 @@
 {
-  "name": "native-to-evm-transaction-example",
+  "name": "native-to-evm-transaction",
   "version": "1.0.0",
   "description": "",
   "main": "scripts/serializeEVMTransaction.js",
@@ -14,7 +14,6 @@
     "@ethereumjs/tx": "^3.5.2",
     "@telosnetwork/telosevm-js": "^0.2.7",
     "eosjs": "^22.1.0",
-    "eosjs2": "^1.0.0",
     "ethers": "^5.6.8",
     "node-fetch": "^3.2.6"
   }
