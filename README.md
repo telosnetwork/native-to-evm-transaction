@@ -21,7 +21,7 @@ Which will give you back:
 
 `f8450685746050fb5682a0f49420027f1e6f597c9e2049ddd5ffb0040aa47f613580a44eb665af0000000000000000000000000000000000000000000000000000000000000e10`
 
-### Use eosio.evm to send it
+### Use the eosio.evm contract to send it
 
 Add that serialized EVM transaction as `tx` parameter to the following cleos command calling eosio.evm `raw` action:
 
