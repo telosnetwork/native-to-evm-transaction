@@ -51,7 +51,7 @@ const nonce = parseInt(await evmApi.telos.getNonce(linkedAddress), 16);
 const gasPrice = BigNumber.from(`0x${await evmApi.telos.getGasPrice()}`)
 ```
 
-Then we need to use a library like etherJS to populate & serialize our new EVM Transaction with the appropriate method we want to call and the variables we just set
+Then we need to use a library like etherJS to populate our new EVM Transaction with the appropriate method we want to call and the variables we just set
 
 ```
 const provider = ethers.getDefaultProvider();
@@ -62,7 +62,7 @@ unsignedTrx.gasLimit = BigNumber.from(`0xA0F4`);
 unsignedTrx.gasPrice = gasPrice;
 ```
 
-And serialize it
+Finally, using the same library we serialize it
 
 ```
 var serializedTransaction = await ethers.utils.serializeTransaction(unsignedTrx);
