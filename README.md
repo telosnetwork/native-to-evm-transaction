@@ -5,7 +5,7 @@ This repository documents how to call an EVM Solidity Contract from Native EOSIO
 Use [this repository]() for an example implementation with the TelosEscrow Contract.
 
 
-## Use our example
+## Using our example
 
 ### Requirements
 
