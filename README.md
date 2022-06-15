@@ -14,11 +14,11 @@ This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a r
 
 ### 1. Get a ERC20 MintableToken address
 
-Deploy your own mintable token in minutes using [our repository](https://github.com/telosnetwork/erc20-mintable-example) and save the address
+Deploy your own mintable token on testnet in minutes using [our repository](https://github.com/telosnetwork/erc20-mintable-example) and save the address
 
 **OR**
 
-Use our already deployed contract @ ...
+Use our already deployed testnet contract @ ...
 
 ### 2. Edit environment values
 Open the .env file and change the following values:
