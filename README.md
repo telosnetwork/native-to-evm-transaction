@@ -89,27 +89,12 @@ cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{
 
 This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a running `nodeos` instance
 
-### Install
+### Deploy an ERC20 Mintable token
 
-Clone it
+Deploy your token in minutes using [our repository](https://github.com/telosnetwork/erc20-infinite-mint-example)
 
-`git clone https://github.com/telosnetwork/native-to-evm-transaction-example`
-
-Enter the directory
-
-`cd native-to-evm-transaction-example`
-
-Install dependencies
-
-`npm install`
-
-### Deploy
-
-Save the address of your newly deployed HelloWorld contract
 
 ### Get the EVM Transaction data
-
-Enter the script directory
 
 `node serializeEVMTransaction.js`
 
