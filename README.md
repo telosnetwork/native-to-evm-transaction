@@ -24,7 +24,9 @@ We can get those variables using [telosevm-js](https://github.com/telosnetwork/t
 
 ```
 import  { TelosEvmApi } from "@telosnetwork/telosevm-js";
+import fetch from "node-fetch";
 import  {BigNumber, ethers}  from  'ethers';
+
 const evmApi = new TelosEvmApi({`
     endpoint: "https://testnet.telos.net",
     chainId: '41',
