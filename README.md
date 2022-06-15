@@ -49,6 +49,8 @@ Which will give you back the raw transaction data and the EVM Address link to yo
 
 ### 4. Use `cleos` to call the eosio.evm contract's `raw` action
 
+Copy the CLEOS COMMAND in the script output or make it yourself:
+
 ```
 cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{
     "ram_payer": YOUR_NATIVE_ACCOUNT, // ie: thisisnottim
