@@ -25,11 +25,11 @@ Open the .env file and change the following values:
 
 ```EVM_CONTRACT_ADDRESS=TOKEN_CONTRACT_ADDRESS```
 
-This is the ERC20 MintableToken address from step 1
+_Paste in the ERC20 MintableToken address from step 1_
 
 ```EVM_USER_ACCOUNT_ADDRESS=USER_ACCOUNT_ADDRESS```
 
-If you deployed your own MintableToken this needs to be the owner address of the contract, else it can be anything
+_If you deployed your own MintableToken this needs to be the owner address of the contract, else it can be anything_
 
 ### 3. Get the EVM Transaction data
 
