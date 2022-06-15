@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 import  Transaction from '@ethereumjs/tx'
 import  {BigNumber, ethers}  from  'ethers';
 
-// PARTIAL ABI W/ THE METHOD WE WANT TO CALL
+// PARTIAL ABI W/ THE HELLO WORLD METHOD WE WANT TO CALL
 const contractAbi = [
     {
         "inputs": [
@@ -36,7 +36,12 @@ const evmApi = new TelosEvmApi({
 });
 (async () => {
 
-    const evmAccount = await evmApi.telos.getEthAccountByTelosAccount(nativeAccount);
+    try {
+        const evmAccount = await evmApi.telos.getEthAccountByTelosAccount(nativeAccount);
+    } catch(e) {
+        console.log(e.message);
+        return;
+    }
     var linkedAddress = evmAccount.address;
     const nonce = parseInt(await evmApi.telos.getNonce(linkedAddress), 16);
     const feeData = await provider.getFeeData()
