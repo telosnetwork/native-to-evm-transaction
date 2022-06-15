@@ -89,9 +89,9 @@ cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{
 
 This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a running `nodeos` instance
 
-### Deploy an ERC20 Mintable token
+### An ERC20 Mintable token
 
-Deploy your mintable token in minutes using [our repository](https://github.com/telosnetwork/erc20-infinite-mint-example) and save the address
+Deploy your own mintable token in minutes using [our repository](https://github.com/telosnetwork/erc20-infinite-mint-example) and save the address
 
 **OR**
 
@@ -111,3 +111,5 @@ Which will give you back the raw transaction data, something like:
 
 ### Use the eosio.evm contract's `raw` action to send it
 
+### Add the token to your wallet and verify its balance
+Using its address add the token to your favorite Telos EVM Wallet and check its balance to see if it matches !
