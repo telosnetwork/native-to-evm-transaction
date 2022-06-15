@@ -4,12 +4,11 @@ This repository documents how to call an EVM Solidity Contract from Native EOSIO
 
 Use [this repository]() for an example implementation with the TelosEscrow Contract.
 
-
-## Using our example
-
-### Requirements
+## Requirements
 
 This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a running `nodeos` instance
+
+## Using our example
 
 ### 1. Get a ERC20 MintableToken address
 
