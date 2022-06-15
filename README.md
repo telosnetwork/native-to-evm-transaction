@@ -13,14 +13,14 @@ This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a r
 
 ### Prepare the EVM Transaction
 
-Populating the EVM Transaction requires several variables:
+Populating the EVM Transaction using etherJS requires several variables:
 
 - Sender
 - Nonce
 - Gas Limit
 - Gas Price
 
-We can get those variables using [telosevm-js](https://github.com/telosnetwork/telosevm-js) and populate and serialize the EVM transaction data using etherJS:
+We can get those variables using [telosevm-js](https://github.com/telosnetwork/telosevm-js):
 
 ```
 import  { TelosEvmApi } from "@telosnetwork/telosevm-js";
@@ -51,7 +51,7 @@ const nonce = parseInt(await evmApi.telos.getNonce(linkedAddress), 16);
 const gasPrice = BigNumber.from(`0x${await evmApi.telos.getGasPrice()}`)
 ```
 
-Then we need to populate a new Transaction with the appropriate method we want to call and the variables we just set
+Then we need to use a library like etherJS to populate & serialize our new EVM Transaction with the appropriate method we want to call and the variables we just set
 
 ```
 const provider = ethers.getDefaultProvider();
