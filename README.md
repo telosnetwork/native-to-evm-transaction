@@ -30,7 +30,7 @@ Which will give you back the raw transaction data, something like:
 
 `f8450685746050fb5682a0f49420027f1e6f597c9e2049ddd5ffb0040aa47f613580a44eb665af0000000000000000000000000000000000000000000000000000000000000e10`
 
-### 4. Use the eosio.evm contract's `raw` action to send it
+### 4. Use `cleos` to call the eosio.evm contract's `raw` action
 
 ### 5. Add the token to your wallet and verify its balance
 Using its address add the token to your favorite Telos EVM Wallet and check its balance to see if it matches !
