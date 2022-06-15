@@ -2,7 +2,7 @@
   "name": "native-to-evm-transaction-example",
   "version": "1.0.0",
   "description": "",
-  "main": "script/serializeEVMTransaction.js",
+  "main": "scripts/serializeEVMTransaction.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
