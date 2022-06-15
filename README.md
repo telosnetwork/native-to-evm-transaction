@@ -4,11 +4,6 @@ This repository documents how to call an EVM Solidity Contract from Native EOSIO
 
 Use [this repository]() for an example implementation with the TelosEscrow Contract.
 
-
-## Requirements
-
-This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a running `nodeos` instance
-
 ## Do it yourself
 
 ### 1. Prepare the EVM Transaction
@@ -89,6 +84,10 @@ cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{
 
 
 ## Use our HelloWorld example
+
+### Requirements
+
+This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a running `nodeos` instance
 
 ### Install
 
