@@ -20,7 +20,24 @@ Preparing the EVM Transaction requires several variables:
 - Sender
 - Nonce
 - Gas Limit
+- Gas Price
 - Data
+
+We can get those variables using [telosevm-js](https://github.com/telosnetwork/telosevm-js):
+
+``import  { TelosEvmApi } from "@telosnetwork/telosevm-js";
+const evmApi = new TelosEvmApi({
+    endpoint: "https://testnet.telos.net",
+    chainId: '41',
+    ethPrivateKeys: [],
+    fetch: fetch,
+    telosContract: 'eosio.evm',
+    telosPrivateKeys: []
+});``
+
+**Sender**
+``const evmAccount = await evmApi.telos.getEthAccountByTelosAccount("mynativeaccount")
+const linkedAddress = evmAccount.address;``
 
 ### Send the EVM Transaction from Native
 
