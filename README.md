@@ -91,7 +91,11 @@ This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a r
 
 ### Deploy an ERC20 Mintable token
 
-Deploy your token in minutes using [our repository](https://github.com/telosnetwork/erc20-infinite-mint-example)
+Deploy your token in minutes using [our repository](https://github.com/telosnetwork/erc20-infinite-mint-example) and save the address
+
+** OR **
+
+Use our already deployed contract @ ...
 
 
 ### Get the EVM Transaction data
