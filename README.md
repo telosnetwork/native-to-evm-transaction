@@ -23,11 +23,15 @@ Use our already deployed contract @ ...
 ### 2. Edit environment values
 Open the .env file and change the following values:
 
+```NATIVE_ACCOUNT=USER_NATIVE_ACCOUNT```
+
+This is your Telos native account name (ie: thisisnottim)
+
 ```EVM_CONTRACT_ADDRESS=TOKEN_CONTRACT_ADDRESS```
 
 _Paste in the ERC20 MintableToken address from step 1_
 
-```EVM_USER_ACCOUNT_ADDRESS=USER_ACCOUNT_ADDRESS```
+```EVM_MINT_TO_ADDRESS=USER_ACCOUNT_ADDRESS```
 
 _This is the address you will receive the tokens on. If you deployed your own MintableToken this needs to be the owner address of the contract, else it can be anything_
 
@@ -35,11 +39,22 @@ _This is the address you will receive the tokens on. If you deployed your own Mi
 
 `node serializeEVMTransaction.js`
 
-Which will give you back the raw transaction data, something like:
+Which will give you back the raw transaction data and the EVM Address link to your native account, something like:
 
-`f8450685746050fb5682a0f49420027f1e6f597c9e2049ddd5ffb0040aa47f613580a44eb665af0000000000000000000000000000000000000000000000000000000000000e10`
+```SERIALIZED_TX: f8450685746050fb5682a0f49420027f1e6f597c9e2049ddd5ffb0040aa47f613580a44eb665af0000000000000000000000000000000000000000000000000000000000000e10```
+```LINKED_ADDRESS: 0xe7209d65c5BB05cdf799b20fF0EC09E691FC3f12```
+```CLEOS COMMAND: cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{ .... ```
 
 ### 4. Use `cleos` to call the eosio.evm contract's `raw` action
+
+```
+cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{
+    "ram_payer": YOUR_NATIVE_ACCOUNT, // ie: thisisnottim
+    "tx": SERIALIZED_TX, // the Serialized Transaction output
+    "estimate_gas": false,
+    "sender": LINKED_ADDRESS // Our Linked Address output
+}' -p yournativeaccount
+```
 
 ### 5. Add the token to your wallet and verify its balance
 Using its address add the token to your favorite Telos EVM Wallet and check its balance to see if it matches the amount you minted !
