@@ -15,6 +15,13 @@ EOSIO's `cleos` & `keosk` are required to call eosio.evm `raw` method
 
 ### Prepare the EVM Transaction
 
+Preparing the EVM Transaction requires several variables:
+
+- Sender
+- Nonce
+- Gas Limit
+- Data
+
 ### Send the EVM Transaction from Native
 
 ## Example
