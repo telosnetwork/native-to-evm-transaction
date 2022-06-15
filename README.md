@@ -29,7 +29,7 @@ _Paste in the ERC20 MintableToken address from step 1_
 
 ```EVM_USER_ACCOUNT_ADDRESS=USER_ACCOUNT_ADDRESS```
 
-_If you deployed your own MintableToken this needs to be the owner address of the contract, else it can be anything_
+_This is the address you will receive the tokens on. If you deployed your own MintableToken this needs to be the owner address of the contract, else it can be anything_
 
 ### 3. Get the EVM Transaction data
 
