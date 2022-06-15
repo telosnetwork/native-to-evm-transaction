@@ -10,8 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@ethereumjs/common": "^2.6.4",
-    "@ethereumjs/tx": "^3.5.2",
     "@telosnetwork/telosevm-js": "^0.2.7",
     "eosjs": "^22.1.0",
     "ethers": "^5.6.8",
