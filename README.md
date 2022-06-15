@@ -27,7 +27,7 @@ We can get those variables using [telosevm-js](https://github.com/telosnetwork/t
 
 `import  { TelosEvmApi } from "@telosnetwork/telosevm-js";`
 
-`const evmApi = new TelosEvmApi({
+`const evmApi = new TelosEvmApi({`
 
     endpoint: "https://testnet.telos.net",
 
@@ -41,7 +41,7 @@ We can get those variables using [telosevm-js](https://github.com/telosnetwork/t
     
     telosPrivateKeys: []
 
-});`
+`});`
 
 **Sender**
 ``const evmAccount = await evmApi.telos.getEthAccountByTelosAccount("mynativeaccount")
