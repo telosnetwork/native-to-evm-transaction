@@ -2,11 +2,6 @@ import  { TelosEvmApi } from "@telosnetwork/telosevm-js";
 import fetch from "node-fetch";
 import  Transaction from '@ethereumjs/tx'
 import  {BigNumber, ethers}  from  'ethers';
-import {JsonRpc, Api} from 'eosjs';
-import {JsSignatureProvider} from 'eosjs/dist/eosjs-jssig.js';
-const rpc = new JsonRpc("https://testnet.telos.net", {fetch});
-const signatureProvider = new JsSignatureProvider(["5JacbMgupaZFYQURgJcKjoSLnuDHr16WtVF9xXFj3cGBSLhYmBr"])
-const nativeApi = new Api({rpc, signatureProvider});
 
 const nativeAccount = "prods.evm";
 const EVMContractAddress = "0x20027f1e6f597c9e2049ddd5ffb0040aa47f6135";
@@ -60,7 +55,6 @@ const myArgs = process.argv.slice(2);
     const nonce = parseInt(await evmApi.telos.getNonce(linkedAddress), 16);
     const feeData = await provider.getFeeData()
     const gasPrice = BigNumber.from(`0x${await evmApi.telos.getGasPrice()}`)
-    // POPULATE TRANSACTION FROM ARGS
     let unsignedTrx = null;
     if(myArgs.length < 2){
         return;
