@@ -67,11 +67,25 @@ unsignedTrx.gasPrice = gasPrice;
 And serialize it
 
 ```
-var raw = await ethers.utils.serializeTransaction(unsignedTrx);
+var serializedTransaction = await ethers.utils.serializeTransaction(unsignedTrx);
 ```
 
 
 ### Send the EVM Transaction from Native
+
+Once we have that raw EVM transaction data, we can send it from Native to EVM using the eosio.evm contract's `raw()` method
+
+For example, using cleos:
+
+```
+cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{
+    "ram_payer": yournativeaccount,
+    "tx": serializedTransaction, // Our serializedTransaction variable
+    "estimate_gas": false,
+    "sender": linkedAddress // Our linkedAddress variable
+}' -p yournativeaccount
+```
+
 
 ## Example
 
