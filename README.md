@@ -13,7 +13,7 @@ This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a r
 
 ### Prepare the EVM Transaction
 
-Besides the data itself, preparing the EVM Transaction requires several variables:
+Populating the EVM Transaction requires several variables:
 
 - Sender
 - Nonce
