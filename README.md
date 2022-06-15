@@ -61,7 +61,7 @@ cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{
 ```
 
 ### 5. Add the token to your wallet and verify its balance
-Using its address add the token to your favorite Telos EVM Wallet and check its balance to see if it matches the amount you minted !
+Using its address add the token to your favorite Telos EVM Wallet and check its balance to see if it matches 100 !
 
 ## Doing it yourself
 
