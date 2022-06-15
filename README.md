@@ -23,6 +23,7 @@ Use our already deployed contract @ ...
 ### 2. Edit environment values
 Open the .env file and change the following values:
 
+`EVM_CONTRACT_ADDRESS=TOKEN_CONTRACT_ADDRESS`
 
 ### 3. Get the EVM Transaction data
 
