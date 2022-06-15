@@ -53,7 +53,7 @@ const nonce = parseInt(await evmApi.telos.getNonce(linkedAddress), 16);
 const gasPrice = BigNumber.from(`0x${await evmApi.telos.getGasPrice()}`)
 ```
 
-All that is left then is to populate a new Transaction
+Then we need to populate a new Transaction with the appropriate method we want to call and the variables we just set
 
 ```
 const provider = ethers.getDefaultProvider();
@@ -64,7 +64,7 @@ unsignedTrx.gasLimit = BigNumber.from(`0xA0F4`);
 unsignedTrx.gasPrice = gasPrice;
 ```
 
-And serializing it
+And serialize it
 
 ```
 var raw = await ethers.utils.serializeTransaction(unsignedTrx);
