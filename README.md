@@ -15,13 +15,12 @@ EOSIO's `cleos` & `keosk` are required to call eosio.evm `raw` method
 
 ### Prepare the EVM Transaction
 
-Preparing the EVM Transaction requires several variables:
+Besides the data itself, preparing the EVM Transaction requires several variables:
 
 - Sender
 - Nonce
 - Gas Limit
 - Gas Price
-- Data
 
 We can get those variables using [telosevm-js](https://github.com/telosnetwork/telosevm-js):
 
@@ -38,8 +37,20 @@ const evmApi = new TelosEvmApi({`
 ```
 
 **Sender**
-``const evmAccount = await evmApi.telos.getEthAccountByTelosAccount("mynativeaccount")
-const linkedAddress = evmAccount.address;``
+```
+const evmAccount = await evmApi.telos.getEthAccountByTelosAccount("mynativeaccount")
+const linkedAddress = evmAccount.address;
+```
+
+**Nonce**
+```
+const nonce = parseInt(await evmApi.telos.getNonce(linkedAddress), 16);
+```
+
+**Gas Price**
+```
+const gasPrice = BigNumber.from(`0x${await evmApi.telos.getGasPrice()}`)
+```
 
 ### Send the EVM Transaction from Native
 
