@@ -5,7 +5,7 @@ This repository documents how to call an EVM Solidity Contract from Native EOSIO
 
 ## Requirements
 
-This repository requires NodeJS 14+
+The example script in this repository requires NodeJS 14+
 
 ## Rundown
 
