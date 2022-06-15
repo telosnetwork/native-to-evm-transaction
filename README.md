@@ -17,6 +17,10 @@ You can use it like so:
 
 `node serializeEVMTransaction.js setLockDuration 3600`
 
+`node serializeEVMTransaction.js setMaxDeposits 600`
+
+`node serializeEVMTransaction.js transferOwnership 0x7c56101c01eaaece3d1bb330910c8e9183b39dbd`
+
 Which will give you back:
 
 `f8450685746050fb5682a0f49420027f1e6f597c9e2049ddd5ffb0040aa47f613580a44eb665af0000000000000000000000000000000000000000000000000000000000000e10`
