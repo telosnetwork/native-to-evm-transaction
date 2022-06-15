@@ -25,7 +25,7 @@ Preparing the EVM Transaction requires several variables:
 
 We can get those variables using [telosevm-js](https://github.com/telosnetwork/telosevm-js):
 
-``import  { TelosEvmApi } from "@telosnetwork/telosevm-js";
+`import  { TelosEvmApi } from "@telosnetwork/telosevm-js";
 
 const evmApi = new TelosEvmApi({
 
@@ -41,7 +41,7 @@ const evmApi = new TelosEvmApi({
     
     telosPrivateKeys: []
 
-});``
+});`
 
 **Sender**
 ``const evmAccount = await evmApi.telos.getEthAccountByTelosAccount("mynativeaccount")
