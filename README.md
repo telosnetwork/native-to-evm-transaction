@@ -1,4 +1,4 @@
-# How-to: Native to EVM transaction (with example)
+# How-to: Native to EVM transaction
 
 This repository documents how to call an EVM Solidity Contract from Native EOSIO 
 
@@ -21,9 +21,13 @@ EOSIO's `cleos` & `keosk` are required to call eosio.evm `raw` method
 
 `git clone https://github.com/telosnetwork/native-to-evm-transaction-example`
 
+`cd native-to-evm-transaction-example`
+
+`npm install`
+
 ### Deploy
 
-Save the address of the contract
+Save the address of your newly deployed HelloWorld contract
 
 ### Get the EVM Transaction data
 
