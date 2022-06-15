@@ -13,9 +13,9 @@ EOSIO's `cleos` & `keosk` are required to call eosio.evm `raw` method
 
 ## Rundown
 
-###
+### Prepare the EVM Transaction
 
-###
+### Send the EVM Transaction from Native
 
 ## Example
 
