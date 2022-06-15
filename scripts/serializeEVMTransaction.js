@@ -43,18 +43,33 @@ const evmApi = new TelosEvmApi({
         return;
     }
     var linkedAddress = evmAccount.address;
-    const nonce = parseInt(await evmApi.telos.getNonce(linkedAddress), 16);
+    try {
+        const nonce = parseInt(await evmApi.telos.getNonce(linkedAddress), 16);
+    } catch(e) {
+        console.log(e.message);
+        return;
+    }
     const feeData = await provider.getFeeData()
     const gasPrice = BigNumber.from(`0x${await evmApi.telos.getGasPrice()}`)
 
     // POPULATE TRANSACTION
-    var unsignedTrx =  await contract.populateTransaction.helloWorld(parameter);
+    try {
+        var unsignedTrx =  await contract.populateTransaction.helloWorld(parameter);
+    } catch(e) {
+        console.log(e.message);
+        return;
+    }
     unsignedTrx.nonce = nonce;
     unsignedTrx.gasLimit = BigNumber.from(`0xA0F4`);
     unsignedTrx.gasPrice = gasPrice;
 
     // SERIALIZE IT
-    var raw = await ethers.utils.serializeTransaction(unsignedTrx);
+    try {
+        var raw = await ethers.utils.serializeTransaction(unsignedTrx);
+    } catch(e) {
+        console.log(e.message);
+        return;
+    }
     raw = raw.replace(/^0x/, '');
 
     // PRINT IT OUT
