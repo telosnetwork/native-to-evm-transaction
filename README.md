@@ -11,7 +11,7 @@ This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a r
 
 ## Do it yourself
 
-### Prepare the EVM Transaction
+### 1. Prepare the EVM Transaction
 
 Populating the EVM Transaction requires several variables:
 
@@ -72,7 +72,7 @@ var serializedTransaction = await ethers.utils.serializeTransaction(unsignedTrx)
 ```
 
 
-### Send the EVM Transaction from Native
+### 2. Send the EVM Transaction from Native
 
 Once we have that raw EVM transaction data, we can send it from Native to EVM using the eosio.evm contract's `raw()` method
 
