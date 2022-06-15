@@ -7,9 +7,7 @@ Use [this repository]() for an example implementation with the TelosEscrow Contr
 
 ## Requirements
 
-The example script in this repository requires NodeJS 14+
-
-EOSIO's `cleos` & `keosk` are required to call eosio.evm `raw` method
+This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a running `nodeos` instance
 
 ## Do it yourself
 
