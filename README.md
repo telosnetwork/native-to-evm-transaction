@@ -11,7 +11,7 @@ The example script in this repository requires NodeJS 14+
 
 EOSIO's `cleos` & `keosk` are required to call eosio.evm `raw` method
 
-## Rundown
+## Do it yourself
 
 ### Prepare the EVM Transaction
 
