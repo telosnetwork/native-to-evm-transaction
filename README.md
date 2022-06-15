@@ -19,11 +19,11 @@ EOSIO's `cleos` & `keosk` are required to call eosio.evm `raw` method
 
 ### Install
 
-`git clone https://github.com/telosnetwork/native-to-evm-transaction-example`
+Clone it with `git clone https://github.com/telosnetwork/native-to-evm-transaction-example`
 
-`cd native-to-evm-transaction-example`
+Enter the directory with `cd native-to-evm-transaction-example`
 
-`npm install`
+Install dependencies with `npm install`
 
 ### Deploy
 
