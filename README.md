@@ -36,7 +36,7 @@ Which will give you back the raw transaction data, something like:
 ### 4. Use `cleos` to call the eosio.evm contract's `raw` action
 
 ### 5. Add the token to your wallet and verify its balance
-Using its address add the token to your favorite Telos EVM Wallet and check its balance to see if it matches !
+Using its address add the token to your favorite Telos EVM Wallet and check its balance to see if it matches the amount you minted !
 
 ## Doing it yourself
 
