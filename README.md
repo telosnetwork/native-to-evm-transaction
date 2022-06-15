@@ -9,11 +9,11 @@ This repository requires NodeJS 14+
 
 ## Rundown
 
-The `getRawEVMTransaction.js` script is an example on how to get the populate & serialize EVM transaction data, it is setup to print out calls to TelosEscrow's setLockDuration, setMaxDeposits or transferOwnership methods.
+The `serializeEVMTransaction.js` script is an example on how to get the populate & serialize EVM transaction data, it is setup to print out calls to TelosEscrow's setLockDuration, setMaxDeposits or transferOwnership methods.
 
 You can use it like so:
 
-`node getRawEVMTransaction.js setLockDuration 3600`
+`node serializeEVMTransaction.js setLockDuration 3600`
 
 Which will give you back:
 
