@@ -70,7 +70,6 @@ const myArgs = process.argv.slice(2);
             unsignedTrx = await contract.populateTransaction.transferOwnership(myArgs[1]);
     }
     if(unsignedTrx == null){
-        console.log(unsignedTrx);
         return ;
     }
     unsignedTrx.nonce = nonce;
