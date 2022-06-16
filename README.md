@@ -100,6 +100,8 @@ const evmAccount = await evmApi.telos.getEthAccountByTelosAccount("mynativeaccou
 const linkedAddress = evmAccount.address;
 ```
 
+_We get the sender's EVM account from its native account, but you could also lookup & hardcode that EVM account directly._
+
 **Nonce**
 ```
 const nonce = parseInt(await evmApi.telos.getNonce(linkedAddress), 16);
