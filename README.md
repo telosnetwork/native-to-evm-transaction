@@ -21,7 +21,7 @@ _This example mints some tokens by calling the mint() method of a mock Telos EVM
 
 **OR**
 
-Use our already deployed freely mintable testnet contract @ 0xAa7C49bD93Ae8277995271c365B901B6C8B8BcE3 (limited to 100 tokens minted per address)
+Use our already deployed freely mintable testnet contract @ `0xAa7C49bD93Ae8277995271c365B901B6C8B8BcE3` (limited to 100 tokens minted per address)
 
 ### 2. Edit environment values
 Open the .env file and change the following values:
