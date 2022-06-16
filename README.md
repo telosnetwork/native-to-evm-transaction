@@ -120,7 +120,7 @@ const contractAddress = "0x20027f1e6f597c9e2049ddd5ffb0040aa47f6135";
 const provider = ethers.getDefaultProvider();
 const contract = new ethers.Contract(contractAddress, contractAbi, provider);
 
-var unsignedTrx =  await contract.populateTransaction.myMethod("HELLO WORLD"); 
+var unsignedTrx =  await contract.populateTransaction.myMethod("HELLO WORLD"); // Populate a TX with a call to contract method
 unsignedTrx.nonce = nonce;
 unsignedTrx.gasLimit = gasLimit;
 unsignedTrx.gasPrice = gasPrice;
