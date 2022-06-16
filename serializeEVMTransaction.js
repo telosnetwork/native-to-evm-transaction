@@ -4,41 +4,16 @@ import fetch from "node-fetch";
 import  Transaction from '@ethereumjs/tx'
 import  {BigNumber, ethers}  from  'ethers';
 import 'dotenv/config';
-
+import contractABI from './abi/MintableToken.js'
 // PARTIAL ABI W/ THE HELLO WORLD METHOD WE WANT TO CALL
-const contractAbi = [
-    {
-      "inputs": [
-        {
-          "internalType": "address",
-          "name": "_to",
-          "type": "address"
-        },
-        {
-          "internalType": "uint256",
-          "name": "_amount",
-          "type": "uint256"
-        }
-      ],
-      "name": "mint",
-      "outputs": [
-        {
-          "internalType": "bool",
-          "name": "",
-          "type": "bool"
-        }
-      ],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    }
-]
+
 
 const nativeAccount = process.env.NATIVE_ACCOUNT_ADDRESS;
 const contractAddress = process.env.EVM_CONTRACT_ADDRESS;
 const amount = (100 * (10 ** 18)).toString();
 
 const provider = ethers.getDefaultProvider();
-const contract = new ethers.Contract(contractAddress, contractAbi, provider);
+const contract = new ethers.Contract(contractAddress, contractABI, provider);
 const evmApi = new TelosEvmApi({
     endpoint: "https://testnet.telos.net",
     chainId: '41',
