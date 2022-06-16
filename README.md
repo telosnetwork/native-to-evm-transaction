@@ -10,7 +10,7 @@ This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a r
 
 **⚠️ The EVM address linked to your native account MUST have enough TLOS in balance to pay for gas fees !**
 
-## Using our MintableToken example
+## A - Using our MintableToken example
 
 _This example mints some tokens by calling the mint() method of a mock Telos EVM [MintableToken](https://github.com/telosnetwork/erc20-mintable-example) contract from Telos Native_
 
@@ -66,7 +66,7 @@ cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{
 ### 5. Add the token to your wallet and verify its balance
 Using its address add the token to your favorite Telos EVM Wallet and check its balance to see if it matches 10 ! If it does, congrats ! You've just minted an EVM token from Telos Native ! 🤯🤯
 
-## Doing it yourself
+## B - Doing it yourself
 
 ### 1. Prepare the EVM Transaction
 
