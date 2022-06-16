@@ -8,7 +8,7 @@ Use [this repository](https://github.com/telosnetwork/native-multisig-to-evm-exa
 
 This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a running `nodeos` instance
 
-**/!\ The EVM address linked to your native account MUST have enough TLOS in balance to pay for gas fees !**
+**⚠️ The EVM address linked to your native account MUST have enough TLOS in balance to pay for gas fees !**
 
 ## Using our MintableToken example
 
