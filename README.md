@@ -90,12 +90,6 @@ const evmApi = new TelosEvmApi({`
     telosContract: 'eosio.evm',
     telosPrivateKeys: []
 });
-
-const contractAddress = "0x20027f1e6f597c9e2049ddd5ffb0040aa47f6135";
-const provider = ethers.getDefaultProvider();
-const contract = new ethers.Contract(contractAddress, contractAbi, provider);
-const contractInstance = await contract.getContractInstance();
-const gasEstimater = contractInstance.estimateGas[contractAbi[0]]; 
 ```
 
 **Sender**
@@ -111,7 +105,7 @@ const nonce = parseInt(await evmApi.telos.getNonce(linkedAddress), 16);
 
 **Gas Limit**
 ```
-const gasLimit = await gasEstimater("HELLO WORLD", Object.assign({from: linkedAddress}, {}));
+const gasLimit = BigNumber.from(`0x1E8480`);
 ```
 
 **Gas Price**
@@ -122,6 +116,9 @@ const gasPrice = BigNumber.from(`0x${await evmApi.telos.getGasPrice()}`)
 Then we need to use a library like etherJS to populate our new EVM Transaction with the appropriate `myMethod` method we want to call, its parameters (a single `"HELLO WORLD"` string here) and the variables we just set
 
 ```
+const contractAddress = "0x20027f1e6f597c9e2049ddd5ffb0040aa47f6135";
+const provider = ethers.getDefaultProvider();
+const contract = new ethers.Contract(contractAddress, contractAbi, provider);
 
 var unsignedTrx =  await contract.populateTransaction.myMethod("HELLO WORLD"); 
 unsignedTrx.nonce = nonce;

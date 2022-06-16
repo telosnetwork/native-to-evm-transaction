@@ -60,7 +60,7 @@ const evmApi = new TelosEvmApi({
 
     const feeData = await provider.getFeeData()
     const gasPrice = BigNumber.from(`0x${await evmApi.telos.getGasPrice()}`)
-    const gasLimit = (await contract.estimateGas.mint(process.env.EVM_MINT_TO_ADDRESS, amount)) * 5;
+    const gasLimit = BigNumber.from(`0x1E8480`);
 
 // POPULATE TRANSACTION
     try {
