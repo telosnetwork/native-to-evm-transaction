@@ -14,18 +14,19 @@ This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a r
 
 ### 1. Get a ERC20 MintableToken address
 
-Deploy your own mintable token on testnet in minutes using [our repository](https://github.com/telosnetwork/erc20-mintable-example) and save the address
+- Get the EVM address linked to the native account you want to send this transaction from.
+- Deploy your owner mintable token on testnet in minutes using [our repository](https://github.com/telosnetwork/erc20-mintable-example) and that EVM address
 
 **OR**
 
-Use our already deployed testnet contract @ ...
+Use our already deployed freely mintable testnet contract @ ...
 
 ### 2. Edit environment values
 Open the .env file and change the following values:
 
 ```NATIVE_ACCOUNT_ADDRESS=USER_NATIVE_ACCOUNT```
 
-_This is your Telos native account name (ie: thisisnottim)_
+_This is your Telos native account name (if you deployed a MintableToken use the native account linked to that EVM address)_
 
 ```EVM_CONTRACT_ADDRESS=TOKEN_CONTRACT_ADDRESS```
 
