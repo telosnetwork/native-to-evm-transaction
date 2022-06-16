@@ -66,7 +66,7 @@ const evmApi = new TelosEvmApi({
 
     // POPULATE TRANSACTION
     try {
-        var unsignedTrx =  await contract.populateTransaction.mint(process.env.EVM_USER_ACCOUNT_ADDRESS, 100);
+        var unsignedTrx =  await contract.populateTransaction.mint(process.env.EVM_MINT_TO_ADDRESS, 100);
     } catch(e) {
         console.log(e.message);
         return;
