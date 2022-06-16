@@ -82,7 +82,7 @@ We can get those variables using [telosevm-js](https://github.com/telosnetwork/t
 ```
 import  { TelosEvmApi } from "@telosnetwork/telosevm-js";
 import fetch from "node-fetch";
-import contractABI from './abi/MyContract.js' // Import your contract's ABI here
+import contractABI from './abi/MyContract.js' // Import the EVM contract's ABI here
 import  {BigNumber, ethers}  from  'ethers';
 
 const evmApi = new TelosEvmApi({`
