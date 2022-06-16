@@ -1,6 +1,6 @@
 # How-to: Native to EVM transaction
 
-This repository documents how to call an EVM Solidity Contract from Native EOSIO
+This repository documents how to call an EVM Solidity Contract from Native EOSIO using the eosio.evm contract's `raw` action
 
 Use [this repository]() for an example implementation with the TelosEscrow Contract.
 
