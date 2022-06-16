@@ -21,7 +21,7 @@ _This example mints some tokens by calling the mint() method of a mock Telos EVM
 
 **OR**
 
-Use our already deployed freely mintable testnet contract @ ...
+Use our already deployed freely mintable testnet contract @ ... (limited to 100 tokens minted per address)
 
 ### 2. Edit environment values
 Open the .env file and change the following values:
@@ -64,7 +64,7 @@ cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{
 ```
 
 ### 5. Add the token to your wallet and verify its balance
-Using its address add the token to your favorite Telos EVM Wallet and check its balance to see if it matches 100 !
+Using its address add the token to your favorite Telos EVM Wallet and check its balance to see if it matches 10 !
 
 ## Doing it yourself
 
