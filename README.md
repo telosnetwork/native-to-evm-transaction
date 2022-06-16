@@ -12,6 +12,8 @@ This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a r
 
 ## Using our MintableToken example
 
+_Mint some tokens by calling the mint() method of a Telos EVM MintableToken contract from Telos Native _
+
 ### 1. Get a ERC20 MintableToken address
 
 - Get the EVM address linked to the native account you want to send this transaction from.
