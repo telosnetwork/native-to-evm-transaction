@@ -15,7 +15,7 @@ This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a r
 ### 1. Get a ERC20 MintableToken address
 
 - Get the EVM address linked to the native account you want to send this transaction from.
-- Deploy your own mintable token on testnet in minutes using [our repository](https://github.com/telosnetwork/erc20-mintable-example) and that EVM address
+- Deploy your own mintable token on testnet in minutes using [our repository](https://github.com/telosnetwork/erc20-mintable-example) and that EVM address as `ACCOUNT` variable
 
 **OR**
 
