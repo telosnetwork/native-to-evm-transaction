@@ -23,7 +23,7 @@ Use our already deployed testnet contract @ ...
 ### 2. Edit environment values
 Open the .env file and change the following values:
 
-```NATIVE_ACCOUNT=USER_NATIVE_ACCOUNT```
+```NATIVE_ACCOUNT_ADDRESS=USER_NATIVE_ACCOUNT```
 
 _This is your Telos native account name (ie: thisisnottim)_
 
@@ -33,7 +33,7 @@ _Paste in the ERC20 MintableToken address from step 1_
 
 ```EVM_MINT_TO_ADDRESS=USER_ACCOUNT_ADDRESS```
 
-_This is the address you will receive the tokens on. If you deployed your own MintableToken this needs to be the owner address of the contract, else it can be anything_
+_This is the address you will receive the tokens on._
 
 ### 3. Get the EVM Transaction data
 
