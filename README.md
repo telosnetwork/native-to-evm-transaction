@@ -45,11 +45,11 @@ Which will give you back the raw transaction data and the EVM Address link to yo
 
 ```LINKED_ADDRESS: 0xe7209d65c5BB05cdf799b20fF0EC09E691FC3f12```
 
-```CLEOS COMMAND: cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{ .... ```
+```CLEOS_COMMAND: cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{ .... ```
 
 ### 4. Use `cleos` to call the eosio.evm contract's `raw` action
 
-Copy the CLEOS COMMAND in the script output or make it yourself:
+Copy the CLEOS_COMMAND in the script output or make it yourself:
 
 ```
 cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{
