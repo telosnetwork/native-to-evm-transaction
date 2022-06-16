@@ -141,7 +141,7 @@ For example, using cleos:
 
 ```
 cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{
-    "ram_payer": yournativeaccount,
+    "ram_payer": mynativeaccount,
     "tx": serializedTransaction, // Our serializedTransaction variable
     "estimate_gas": false,
     "sender": linkedAddress // Our linkedAddress variable
