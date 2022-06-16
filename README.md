@@ -26,7 +26,7 @@ Open the .env file and change the following values:
 
 ```NATIVE_ACCOUNT_ADDRESS=USER_NATIVE_ACCOUNT```
 
-_This is your Telos native account name. If you deployed a MintableToken use the native account linked to that EVM address_
+_This is your Telos native account name. If you deployed a MintableToken use the native account you got the EVM address from_
 
 ```EVM_CONTRACT_ADDRESS=TOKEN_CONTRACT_ADDRESS```
 
