@@ -64,7 +64,7 @@ cleos --url https://testnet.telos.caleos.io/ push action eosio.evm raw '{
 ```
 
 ### 5. Add the token to your wallet and verify its balance
-Using its address add the token to your favorite Telos EVM Wallet and check its balance to see if it matches 10 ! If it does, congrats ! You've just minted EVM tokens from Telos Native ! 🤯🤯
+Using its address add the token to your favorite Telos EVM Wallet and check its balance to see if it matches 10 ! If it does, congrats ! You've just minted an EVM token from Telos Native ! 🤯🤯
 
 ## Doing it yourself
 
