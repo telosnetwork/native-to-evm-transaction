@@ -14,7 +14,7 @@ This repository requires NodeJS 14+ as well as EOSIO's `cleos` & `keosk` and a r
 
 _This example mints some tokens by calling the mint() method of a mock Telos EVM [MintableToken](https://github.com/telosnetwork/erc20-mintable-example) contract from Telos Native_
 
-### 1. Get a ERC20 MintableToken address
+### 1. Get a MintableToken address
 
 - Get the EVM address linked to the native account you want to send this transaction from.
 - Deploy your own mintable token on testnet in minutes using [our repository](https://github.com/telosnetwork/erc20-mintable-example) and that EVM address as `ACCOUNT` variable
