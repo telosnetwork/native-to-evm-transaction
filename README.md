@@ -110,8 +110,11 @@ const nonce = parseInt(await evmApi.telos.getNonce(linkedAddress), 16);
 
 **Gas Limit**
 ```
-const gasLimit = BigNumber.from(`0x1E8480`);
+const gasLimit = BigNumber.from(`0x1E8480`); 
 ```
+
+_Remember that Telos EVM gas is fixed, we can set the limit to what the real cost is, which we do here, if you are not sure you can use ether to estimate the gas and set that as limit_
+
 
 **Gas Price**
 ```
