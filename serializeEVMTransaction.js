@@ -33,9 +33,8 @@ const contractAbi = [
     }
 ]
 
-const nativeAccount = "mynativeaccount";
-const contractAddress = "0x20027f1e6f597c9e2049ddd5ffb0040aa47f6135";
-const parameter = "MY GREAT NAME";
+const nativeAccount = process.env.NATIVE_ACCOUNT_ADDRESS;
+const contractAddress = process.env.EVM_CONTRACT_ADDRESS;
 
 const provider = ethers.getDefaultProvider();
 const contract = new ethers.Contract(contractAddress, contractAbi, provider);
