@@ -42,7 +42,7 @@ _This is the address you will receive the tokens on._
 
 `node generateEVMTransaction.js`
 
-Which will give you back the raw transaction data and the EVM Address linked to your native account as well as an example cleos command, something like:
+Which will give you back the raw EVM transaction data and the EVM Address linked to your native account as well as an example cleos command, something like:
 
 ```SERIALIZED_TX: f8450685746050fb5682a0f49420027f1e6f597c9e2049ddd5ffb0040aa47f613580a44eb665af0000000000....```
 
