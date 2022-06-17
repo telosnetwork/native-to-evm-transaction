@@ -76,7 +76,7 @@ Populating the EVM Transaction first requires several variables:
 - Gas Price
 - Gas Limit
 
-We can get compute those variables using [telosevm-js](https://github.com/telosnetwork/telosevm-js):
+We can retreive & compute those variables using [telosevm-js](https://github.com/telosnetwork/telosevm-js):
 
 ```
 import  { TelosEvmApi } from "@telosnetwork/telosevm-js";
