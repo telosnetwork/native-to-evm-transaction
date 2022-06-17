@@ -124,7 +124,7 @@ Then we need to use a library like etherJS to populate our new EVM Transaction w
 ```
 const contractAddress = "0x20027f1e6f597c9e2049ddd5ffb0040aa47f6135"; // Our EVM Contract address
 const provider = ethers.getDefaultProvider();
-const contract = new ethers.Contract(contractAddress, contractAbi, provider);
+const contract = new ethers.Contract(contractAddress, contractABI, provider);
 
 var unsignedTrx =  await contract.populateTransaction.myMethod("HELLO WORLD"); // Populates a TX with a call to contract method
 unsignedTrx.nonce = nonce;
