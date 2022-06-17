@@ -107,13 +107,14 @@ const gasPrice = BigNumber.from(`0x${await evmApi.telos.getGasPrice()}`)
 ```
 
 **Gas Limit**
-_Remember that Telos EVM gas is fixed, we can hardcode the limit to what the real cost is, which we do here__
+
+_Remember that Telos EVM gas is fixed, we can hardcode the limit to what the real cost is, like so:_
 
 ```const gasLimit = BigNumber.from(`0x1E8480`); ```
 
 **OR**
 
-_You can use ether to estimate the gas and set that as limit_
+_You can use etherJS to estimate the gas and set that as limit (watch out that gas estimation can be too low)_
 
 ```const gasLimit = await contract.gasEstimate.mint(ADDRESS, 10)```
 
