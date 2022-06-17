@@ -116,7 +116,7 @@ _Remember that Telos EVM gas is fixed, we can hardcode the limit to what the rea
 
 _You can use etherJS to estimate the gas and set that as limit (watch out that gas estimation can be too low)_
 
-```const gasLimit = await contract.gasEstimate.mint(ADDRESS, 10)```
+```const gasLimit = await contract.estimateGas.mint(ADDRESS, 10)```
 
 
 Then we need to use a library like etherJS to populate our new EVM Transaction with the appropriate `myMethod` method we want to call, its parameters (a single `"HELLO WORLD"` string here) and the variables we just set
