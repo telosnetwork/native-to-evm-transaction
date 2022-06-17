@@ -38,7 +38,7 @@ _Paste in the ERC20 MintableToken address from step 1_
 
 _This is the address you will receive the tokens on._
 
-### 3. Get the  EVM Transaction
+### 3. Get the serialiazed EVM Transaction
 
 `node generateEVMTransaction.js`
 
