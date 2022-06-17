@@ -72,10 +72,9 @@ Using its address add the token to your favorite Telos EVM Wallet and check its 
 
 Populating the EVM Transaction requires several variables:
 
-- Sender
 - Nonce
-- Gas Limit
 - Gas Price
+- Gas Limit
 
 We can get those variables using [telosevm-js](https://github.com/telosnetwork/telosevm-js):
 
@@ -102,18 +101,18 @@ const linkedAddress = evmAccount.address;
 const nonce = parseInt(await evmApi.telos.getNonce(linkedAddress), 16);
 ```
 
-**Gas Limit**
-```
-const gasLimit = BigNumber.from(`0x1E8480`); 
-```
-
-_Remember that Telos EVM gas is fixed, we can set the limit to what the real cost is, which we do here, if you are not sure you can use ether to estimate the gas and set that as limit `const gasLimit = await contract.gasEstimate.mint(ADDRESS, 10)`_
-
-
 **Gas Price**
 ```
 const gasPrice = BigNumber.from(`0x${await evmApi.telos.getGasPrice()}`)
 ```
+
+**Gas Limit**
+_Remember that Telos EVM gas is fixed, we can hardcode the limit to what the real cost is, which we do here__
+```const gasLimit = BigNumber.from(`0x1E8480`); ```
+**OR**
+_You can use ether to estimate the gas and set that as limit_
+```const gasLimit = await contract.gasEstimate.mint(ADDRESS, 10)```
+
 
 Then we need to use a library like etherJS to populate our new EVM Transaction with the appropriate `myMethod` method we want to call, its parameters (a single `"HELLO WORLD"` string here) and the variables we just set
 
