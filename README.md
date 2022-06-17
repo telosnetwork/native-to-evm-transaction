@@ -97,6 +97,8 @@ const evmApi = new TelosEvmApi({`
 
 **Nonce**
 ```
+const evmAccount = await evmApi.telos.getEthAccountByTelosAccount("mynativeaccount")
+const linkedAddress = evmAccount.address;
 const nonce = parseInt(await evmApi.telos.getNonce(linkedAddress), 16);
 ```
 
