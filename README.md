@@ -38,9 +38,9 @@ _Paste in the ERC20 MintableToken address from step 1_
 
 _This is the address you will receive the tokens on._
 
-### 3. Get the  EVM Transaction formated to a Native Action
+### 3. Get the  EVM Transaction
 
-`node generateEVMActions`
+`node generateEVMTransaction`
 
 Which will give you back the raw transaction data and the EVM Address linked to your native account as well as an example cleos command, something like:
 
