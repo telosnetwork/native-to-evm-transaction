@@ -70,13 +70,13 @@ Using its address add the token to your favorite Telos EVM Wallet and check its 
 
 ### 1. Prepare the EVM Transaction
 
-Populating the EVM Transaction requires several variables:
+Populating the EVM Transaction first requires several variables:
 
 - Nonce
 - Gas Price
 - Gas Limit
 
-We can get those variables using [telosevm-js](https://github.com/telosnetwork/telosevm-js):
+We can get compute those variables using [telosevm-js](https://github.com/telosnetwork/telosevm-js):
 
 ```
 import  { TelosEvmApi } from "@telosnetwork/telosevm-js";
