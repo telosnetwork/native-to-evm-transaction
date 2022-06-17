@@ -40,7 +40,7 @@ _This is the address you will receive the tokens on._
 
 ### 3. Get the  EVM Transaction
 
-`node generateEVMTransaction`
+`node generateEVMTransaction.js`
 
 Which will give you back the raw transaction data and the EVM Address linked to your native account as well as an example cleos command, something like:
 
