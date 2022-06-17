@@ -1,6 +1,6 @@
 # How-to: Native to EVM transaction
 
-This repository documents how to call an EVM Solidity Contract from Native EOSIO using the eosio.evm contract's `raw(ram_payer, tx, sender)` action
+This repository documents how to call a Telos EVM Solidity Contract from Native Telos using the eosio.evm contract's `raw(ram_payer, tx, sender)` action
 
 Use [this repository](https://github.com/telosnetwork/native-multisig-to-evm-example) for an example implementation with Native multisig and the TelosEscrow EVM Contract.
 
