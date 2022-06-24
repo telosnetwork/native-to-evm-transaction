@@ -1,6 +1,6 @@
 # How-to: Native to EVM transaction
 
-Using a [MintableToken](https://github.com/telosnetwork/erc20-mintable-example) example EVM contract, this repository documents how to call a Telos EVM Solidity Contract from Native Telos using the eosio.evm contract's `raw(ram_payer, tx, sender)` action
+Using a [MintableToken](https://github.com/telosnetwork/erc20-mintable-example) example EVM contract, this repository documents how to call a Telos EVM Solidity Contract from Native Telos using the eosio.evm contract's `raw(ram_payer, tx, estimate_gas, sender)` action
 
 Use [this repository](https://github.com/telosnetwork/native-multisig-to-evm-example) for an example implementation with Native multisig and the TelosEscrow EVM Contract.
 
