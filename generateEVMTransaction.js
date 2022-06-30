@@ -15,8 +15,8 @@ const amount = (100 * (10 ** 18)).toString();
 const provider = ethers.getDefaultProvider();
 const contract = new ethers.Contract(contractAddress, contractABI, provider);
 const evmApi = new TelosEvmApi({
-    endpoint: "https://testnet.telos.net",
-    chainId: '41',
+    endpoint: process.env.RPC_ENDPOINT,
+    chainId: process.env.CHAIN_ID,
     ethPrivateKeys: [],
     fetch: fetch,
     telosContract: 'eosio.evm',
@@ -45,6 +45,7 @@ const evmApi = new TelosEvmApi({
         return;
     }
     unsignedTrx.nonce = nonce;
+    unsignedTrx.chainId = process.env.CHAIN_ID;
     unsignedTrx.gasLimit = gasLimit;
     unsignedTrx.gasPrice = gasPrice;
 
